@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW VR Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include A-Frame library for VR -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BMW VR Showroom</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Add a new link for VR experience page -->
+                    <li><a href="vr.html">VR Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="vr-experience">
+            <div class="container">
+                <h2>Explore BMW Models in Virtual Reality</h2>
+                <a href="#" class="btn">Start VR Tour</a>
+                <div id="vr-scene">
+                    <!-- A-Frame VR scene -->
+                    <a-scene embedded>
+                        <!-- Add 360-degree images for each BMW model -->
+                        <a-sky src="media/bmw-m3-360.jpg" rotation="0 -130 0"></a-sky>
+                        <!-- Add more <a-sky> tags for other models -->
+                    </a-scene>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BMW Showroom. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
